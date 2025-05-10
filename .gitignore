@@ -1,1 +1,5 @@
 *.pdf
+*.png
+__pycache__/
+models/
+wandb/

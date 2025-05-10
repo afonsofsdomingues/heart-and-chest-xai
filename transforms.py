@@ -11,17 +11,21 @@ def get_training_augmentation_pipeline():
         albumentations.Compose: A pipeline with training augmentations.
     """
     augmentation_pipeline = A.Compose([
-        A.Rotate(limit=(-30, 30), p=0.2),
+        A.Rotate(limit=(-15, 15), p=0.3),
 
-        A.HorizontalFlip(p=0.2),  
+        A.HorizontalFlip(p=0.5),  
 
         A.OneOf([
             A.Affine(scale=(0.8, 1.2), balanced_scale=True, p=0.33),  # Zoom
             A.Affine(translate_px=(-10, 10), p=0.33),  # Translation
-            A.Affine(shear=(-20, 20), p=0.33),  # Shearing
+            A.Affine(shear=(-5, 5), p=0.33),  # Shearing
         ], p=0.5),
 
-        A.Lambda(image=elastic_deform, p=0.3),  # Elastic deformation
+        A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1, p=0.5),
+
+        # A.GaussNoise(var_limit=0.01, p=0.1),
+
+        A.Lambda(image=elastic_deform, p=0.1),  # Elastic deformation
     ], seed=42)
 
     return augmentation_pipeline
