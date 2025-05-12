@@ -77,11 +77,11 @@ This project investigates interpretable and explainable machine learning methods
 heart-and-chest-xai/
 ├── chest_xray/             # Raw data for part 2
 ├── heart_failure/          # Raw data for part 1
-├── nam                     # Neural Additive Model for part 1
+├── nam/                    # Neural Additive Model for part 1
 ├── heart_failure.ipynb     # Notebook with solution for part 1
 ├── pneumonia.ipynb         # Notebook with solution for part 2
 ├── requirements_1.txt      # Python dependencies for part 1
 ├── requirements_2.txt      # Python dependencies for part 2
-└── README.md               # Project documentation
-├── transforms.py           # Utility functions for data augmentation (part 2)
+├── README.md               # Project documentation
+└── transforms.py           # Utility functions for data augmentation (part 2)
 ```
