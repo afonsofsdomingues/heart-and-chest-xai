@@ -1,7 +1,32 @@
-# Machine Learning for Healthcare - Project 2
+<div align="center">
+      
+# Heart-and-Chest-XAI
+
+</div>
 
 ## Overview
 This project investigates interpretable and explainable machine learning methods for medical classification tasks using both tabular and imaging data. In Part 1, we focus on the heart disease prediction task, applying shallow models like logistic regression with L1 regularization and deep models such as MLPs and NAMs, using SHAP for post-hoc explanation. In Part 2, we analyze chest X-ray images for pneumonia detection with CNNs, employing saliency-based methods including Integrated Gradients and Grad-CAM to highlight relevant image regions. Our findings offer insights into selecting suitable, trustworthy, and interpretable models for practical medical applications.
+
+For details, refer to our [📄 Project Report](./Machine_Learning_for_Health_Care___Project2_Report.pdf).
+
+You can also find the [📝 Project Handout](./Project2_Explainability_and_Interpretability_Handout.pdf).
+
+We achieved a grade of **5.8**/6 for this project.
+
+## Dataset – Part 1: Heart Disease Prediction
+
+- **Source**: [Kaggle Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) (aggregated from the UCI Machine Learning Repository)  
+- **Data type**: Tabular (clinical and demographic records)  
+- **Features**:  
+  - **11 variables**: Age, Sex, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_Slope  
+- **Target**: Binary classification — **0: Normal, 1: Heart Disease**  
+
+## Dataset – Part 2: Pneumonia Prediction
+
+- **Source**: [Kaggle Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)  
+- **Data type**: Medical images (grayscale JPEG)  
+- **Input**: Chest X-ray images of varying resolution.
+- **Target**: Binary classification — **Normal**, **Pneumonia**
 
 ## How to Run the Project
 
