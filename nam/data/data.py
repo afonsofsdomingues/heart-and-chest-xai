@@ -37,7 +37,7 @@ class NAMDataset(torch.utils.data.Dataset):
             # In multitask setting, set missing labels to 0. The loss
             # contributions from these examples will get zeroed out downstream
             # but leaving nan values will cause a crash.
-            self.y[self.y != self.y] = 0.0
+            self.y[torch.isnan(self.y)] = 0.0
         else:
             # Create task dimension in single task setting for consistency.
             self.y = self.y.unsqueeze(1)
