@@ -2,6 +2,10 @@
       
 # Heart-and-Chest-XAI
 
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=afonsofsdomingues_heart-and-chest-xai&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=afonsofsdomingues_heart-and-chest-xai)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=afonsofsdomingues_heart-and-chest-xai&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=afonsofsdomingues_heart-and-chest-xai)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=afonsofsdomingues_heart-and-chest-xai&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=afonsofsdomingues_heart-and-chest-xai)
+
 </div>
 
 ## Overview
